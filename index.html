@@ -1,0 +1,62 @@
+<!Doctype Html>
+
+<Html>
+<head>
+<title>Chat Application</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="tsChatAppStyle.css" />
+</head>
+
+<body>
+<!--Header Body of the Webpage-->
+<div class="Header">
+  <h1>Chat Application</h1>
+</div>
+
+<!--Chat Section-->
+<div class="ContentSection">
+
+ <!-- User 1 Chat Block-->
+  <div class="Users">
+  <div class="ContentHeader">
+  <div>User 1</div>
+  <button type="button" name="Clear1" onclick="HandleOnClearBtnClick('User1')">Clear</button>
+  </div>
+
+  <!--<div class="NoMsg">No Messages</div>-->
+  <div class="UsersContent" id= "User1Content"></div>
+
+  <div class="UsersInputs">
+  <input id = "MessageUser1" type="text" name="Message1" placeholder="Type Your Message and Press Enter To Send"
+          onkeypress = "HandleOnSendOnEnterKeyPress(event,'MessageUser1')" />
+  <button type="submit" name="Sender1" onclick="HandleOnSendMessageBtnClick('MessageUser1')">Send</button>
+  </div>
+  </div>
+
+  <!-- User 2 Chat Block-->
+  <div class="Users">
+  <div class="ContentHeader">
+  <div>User 2</div>
+  <button type="button" name="Clear2" onclick="HandleOnClearBtnClick('User2')">Clear</button>
+  </div>
+
+  <!--<div class="NoMsg">No Messages</div>-->
+  <div class="UsersContent" id= "User2Content"></div>
+
+  <div class="UsersInputs">
+  <input id="MessageUser2" type="text" name="Message1" placeholder="Type Your Message and Press Enter To Send"
+         onkeypress = "HandleOnSendOnEnterKeyPress(event,'MessageUser2')" />
+  <button type="submit" name="Sender2" onclick="HandleOnSendMessageBtnClick('MessageUser2')">Send</button>
+  </div>
+  </div>
+</div>
+
+<!--Footer of the Webpage-->
+<div class="Footer">
+  <h2>Designed By Akshay, 25 Jun 2019</h2>
+</div>
+
+<script src="tsChatAppScript.js"></script>
+</body>
+</Html>

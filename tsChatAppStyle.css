@@ -1,0 +1,181 @@
+body
+{
+  top: 0px;
+  bottom: 0px;
+}
+*
+{
+  box-sizing: border-box;
+}
+
+.Header
+{
+  top: 0px;
+  padding: 10px;
+  background-color: #2AA2EE;
+  border-bottom: 5px solid white;
+}
+.Header h1
+{
+  text-align: center;
+  color: white;
+  font-family: Algerian, Serif;
+  font-size: 50px;
+  text-shadow: 2px 5px red;
+}
+.ContentSection
+{
+  background-color: white;
+  border: 5px solid skyblue;
+  padding: 10px;
+}
+.ContentSection::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.Users
+{
+  margin: 50px;
+  background-color: #A9A9A9;
+  width: 40%;
+  float: left;
+  border: 3px solid #33CCFF;
+}
+.ContentHeader
+{
+  height: 50px;
+  padding: 10px;
+}
+
+.ContentHeader div
+{
+  color: #F5F5DC;
+  display: inline;
+  font-size: 30px;
+}
+.ContentHeader button
+{
+  background-color: #FFFF00;
+  font-size: 20px;
+  float: right;
+  border-radius: 5px;
+}
+
+.UsersContent
+{
+  width: 100%;
+  height: 400px;
+  background-color: #F0F8FF;
+  border: 2px solid #ADADAD;
+  overflow: auto;
+}
+.NoMsg
+{
+  position: relative;
+  top: 200px;
+  text-align: center;
+  background-color: #F0F8FF;
+  color: #d22c2c;
+  font-weight: bold;
+}
+
+.UsersInputs
+{
+  background-color: #BABABA;
+  padding: 10px;
+}
+.UsersInputs input
+{
+  width: 85%;
+  padding: 10px;
+  float: left;
+}
+.UsersInputs button
+{
+  width: 15%;
+  padding: 10px;
+  background-color: #FF9900;
+  font-family: serif;
+  font-weight: 600;
+}
+
+.Footer
+{
+  background-color: #99CCFF;
+  text-align: center;
+  color: white;
+  bottom: 0px;
+  padding: 10px;
+}
+
+
+.LiMessage1
+{
+  background-color: #b5e2cdad;
+  color: #f92109;
+  max-width: 50%;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px 0px 0px 5px;
+  word-wrap: break-word;
+}
+.LiMessage2
+{
+  width: 50%;
+  margin: 2px 0px 0px 5px;
+  font-size: 12px;
+}
+.LiMessageUser1
+{
+  float: right;
+  background-color: #9bfafd;
+  color: #5341d8;
+  max-width: 50%;
+  width: fit-content;
+  margin: 15px 5px 0px 0px;
+  border-radius: 10px;
+  padding: 15px;
+  word-wrap: break-word;
+}
+.LiMessageUser2
+{
+  float: right;
+  width: 50%;
+  clear: right;
+  text-align: right;
+  margin: 2px 10px 0px 0px;
+  font-size: 12px;
+}
+.MessageBlock
+{
+  clear: both;
+  margin: 5px 0px 0px 5px;
+}
+
+/*For Mobile Screens and Tablet Screens*/
+@media screen and (max-width: 1024px)
+{
+  .Header h1
+  {
+    font-size: 40px;
+  }
+
+  .Users
+  {
+    width: 100%;
+    margin: 2px 1px;
+  }
+  .UsersInputs input
+  {
+    width: 80%;
+  }
+
+  .UsersInputs button
+  {
+    width: 20%;
+  }
+}
+
